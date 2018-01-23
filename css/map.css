@@ -1,0 +1,123 @@
+#map {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+.menu-ui {
+  background: #fff;
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  z-index: 1;
+  border-radius: 3px;
+  width: 120px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.menu-ui a {
+  font-size: 13px;
+  color: #404040;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.menu-ui a:first-child {
+  border-radius: 3px 3px 0 0;
+}
+
+.menu-ui a:last-child {
+  border: none;
+  border-radius: 0 0 3px 3px;
+}
+
+.menu-ui a:hover {
+  background: #f8f8f8;
+  color: #404040;
+  cursor: pointer !important;
+}
+
+.menu-ui a.active,
+.menu-ui a.active:hover {
+  background: #3887BE;
+  color: #FFF;
+}
+
+.info {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+}
+
+.info div {
+  background: #fff;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.leaflet-popup-pane {
+    display: none;
+  }
+
+  #marker_place, #marker_contacts {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .fa-map-marker, .fa-address-card, .fa-share, .fa-envelope, .fa-home, .fa-repeat {
+    color:#EB593C;
+  }
+
+  h5#marker_contacts {
+    font-size:12px;
+  }
+  h5#marker_contacts li {
+    list-style: none;
+    margin-bottom:10px;
+  }
+
+  hr {
+    margin-left: 15px;
+    color:#EB593C;
+    border-style: solid none;
+    border-width: 4px 0;
+    margin: 18px 0;
+}
+
+.blockquote {
+    font-size: 1.6rem;
+}
+
+#marker_place {
+  font-family: 'Slabo 27px', serif;
+  text-transform:capitalize;
+  background-color: #EB593C;
+  color:white;
+  margin:15px;
+  padding:15px;
+  float:right;
+  line-height:2rem;
+}
+
+#marker_place i {
+  color:white;
+}
+
+.search-ui {
+  position:absolute;
+  top:10px;
+  right:10px;
+  z-index:1000;
+  }
+
+h2#marker_title {
+    font-weight: initial;
+    font-family: 'Slabo 27px', serif;
+    font-size:2rem;
+}
