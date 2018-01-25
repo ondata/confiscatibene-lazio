@@ -121,3 +121,18 @@ h2#marker_title {
     font-family: 'Slabo 27px', serif;
     font-size:2rem;
 }
+
+/* input > text placeholder allineato a destra */
+
+input::-webkit-input-placeholder {
+  text-align: right;
+}
+input:-moz-placeholder {
+  text-align: right;
+}
+input::-moz-placeholder {
+  text-align: right;
+}
+input:-ms-input-placeholder {
+  text-align: right;
+}
