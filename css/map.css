@@ -136,3 +136,8 @@ input::-moz-placeholder {
 input:-ms-input-placeholder {
   text-align: right;
 }
+
+.leaflet-overlay-pane svg g path{
+  fill:#EB593C;
+  stroke:#EB593C;
+}

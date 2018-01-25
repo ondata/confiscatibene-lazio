@@ -4,18 +4,20 @@ L.mapbox.accessToken = apiKey;
 var map = L.mapbox.map('map', 'mapbox.streets')
     .setView([41.95, 12.8], 9);
 
-// carico i dati e li aggiungo sulla mappa
+// carico i dati e li memorizzo all'interno di una variabile
 // dati da https://docs.google.com/spreadsheets/d/11Ovpz1hQazDSolLE8mZkYx4FezW-1ZMNnnSJ-JPB1QY/edit#gid=429982970
 var gsheetSource = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSYHT-uy1qLNos8CURf2ql673P9pUQhR3ddymdircsAZ70vjNq2C5-aMU9U3n9U4nrXuwGk1e7F2tjT/pub?gid=570046238&single=true&output=csv';
+
+// tramite la funzione omnivore, faccio il parsing dei dati e aggiungo il layer sulla mappa
 var cbData = omnivore.csv(gsheetSource, null, L.mapbox.featureLayer()).addTo(map);
 console.log();
 
-
+// aggiungo di sfondo il perimetro amministrativo del lazio
 $.ajax({
     url: 'js/lazio.geojson',
     dataType: 'json',
     success: function load(d) {
-        var states = L.geoJson(d).addTo(map);
+        var perimetro = L.geoJson(d).addTo(map);
       }
     });
 
