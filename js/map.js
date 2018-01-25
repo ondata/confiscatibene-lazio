@@ -2,7 +2,7 @@ var apiKey = "pk.eyJ1IjoibmVsc29ubWF1IiwiYSI6ImNqNnhhNXFrMzFyZTEyeGxwcmd2Z2J2dHQ
 L.mapbox.accessToken = apiKey;
 
 var map = L.mapbox.map('map', 'mapbox.streets')
-    .setView([41.9, 12.8], 9);
+    .setView([41.95, 12.8], 9);
 
 // carico i dati e li aggiungo sulla mappa
 // dati da https://docs.google.com/spreadsheets/d/11Ovpz1hQazDSolLE8mZkYx4FezW-1ZMNnnSJ-JPB1QY/edit#gid=429982970
